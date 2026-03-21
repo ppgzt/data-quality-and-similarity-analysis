@@ -1,0 +1,32 @@
++ D_1: train_size + qi_train + qi + weight + (1|thing_id)
+AIC:7950.5
+
+	+ D_2: train_size * qi_train + qi + weight
+	  AIC: 7924.6
+	  
+		+ D_3: train_size * qi_train * qi + weight
+		FAILED to converge
+		
+		+ D_4: train_size * qi_train * weight + qi
+		FAILED to converge
+	  
+	+ D_5: train_size * qi + weight + qi_train
+	AIC: 7898.7
+	
+		+ D_6: train_size * qi * weight + qi_train
+		FAILED to converge
+		
+	+ D_7: train_size * weight + qi_train + qi	
+	AIC: 7942.0
+	
+	+ D_8: train_size + qi_train * qi + weight
+	AIC: 7933.7
+	
+		+ D_9: train_size + qi_train * qi * weight
+		FAILED to converg
+	
+	+ D_10: train_size + qi_train * weight + qi
+	AIC: 7921.4
+	
+	+ D_11: train_size + qi_train + weight * qi
+	AIC: 7952.4

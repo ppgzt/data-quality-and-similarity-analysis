@@ -1,0 +1,49 @@
+Obs: O qtt_in_train está trazendo ruído à interpretação porque apresenta uma correlação negativa com o train_size; Logo, quando se diz que o efeito do qi_train apresenta magnitude maior com base no nível de qtt_train, esconde na verdade o efeito do train_size, que apresenta correlação negativa com o qtt_train. Isto é, o que de fato impacto no efeito do qi_train é o tran_size .... vamos testar outro modelo sem o qtt_in_train ...
+
++ C_1: train_size + qi_train + qtt_in_train + qi + weight + (1|thing_id)
+AIC:7917.2
+
+	+ C_2: train_size * qi_train + qtt_in_train + qi + weight
+	  FAILED to converge
+	  
+	+ C_3: train_size + qi_train * qtt_in_train + qi + weight
+	AIC:7827.5
+	
+		+ C_4: train_size + qi_train * qtt_in_train * qi + weight
+		FAILED to converge
+		
+		+ C_5: train_size + qi_train * qtt_in_train * weight + qi
+		FAILED to converge
+		
+	+ C_6: train_size + qi_train * qi + qtt_in_train + weight	
+	AIC: 7895.9
+	
+		+ C_7: train_size + qi_train * qi * weight + qtt_in_train
+		FAILED to converge
+		
+	+ C_8: train_size + qi_train * weight + qi + qtt_in_train
+	AIC: 7905.3
+	
+	+ C_9: train_size * qtt_in_train + qi_train + qi + weight
+	AIC: 7881.4
+	
+		+ C_10: train_size * qtt_in_train * qi_train + qi + weight
+		FAILED to converge
+		
+		+ C_11: train_size * qtt_in_train * qi + qi_train + weight
+		FAILED to converge
+		
+		+ C_12: train_size * qtt_in_train * weight + qi_train + qi
+		FAILED to converge
+		
+	+ C_13: train_size * qi + qtt_in_train + qi_train + weight
+	AIC: 7856.3
+	
+		+ C_14: train_size * qi * weight + qtt_in_train + qi_train
+		FAILED to converge
+		
+	+ C_15: train_size * weight + qtt_in_train + qi_train + qi
+	AIC: 7894.6
+	
+		
+	
