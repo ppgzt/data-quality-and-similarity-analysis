@@ -1,0 +1,62 @@
++ A_1: train_size + qi_train + qtt_in_train + qi + weight + (1|animal_id)
+  AIC:-4058
+
+	+ A_2: train_size * qi_train + qtt_in_train + qi + weight + (1|animal_id)
+	  AIC: -4074
+	  
+	  + A_12: train_size * qi_train * qtt_in_train + qi + weight + (1|animal_id)
+	    FAILED to converge
+	    
+	  + A_13: train_size * qi_train * qi + qtt_in_train + weight + (1|animal_id)
+	    FAILED to converge
+	    
+	  + A_14: train_size * qi_train * weight + qtt_in_train + qi + (1|animal_id)
+	    FAILED to converge
+	  
+	+ A_3: train_size * qtt_in_train + qi_train + qi + weight + (1|animal_id)
+   	  AIC: -4058
+   	  
+   	    + A_15: train_size * qtt_in_train * qi_train + qi + weight + (1|animal_id)
+   	      FAILED to converge
+
+   	    + A_16: train_size * qtt_in_train * qi + qi_train + weight + (1|animal_id)
+   	      FAILED to converge
+   	      
+   	    + A_17: train_size * qtt_in_train * weight + qi_train + qi + (1|animal_id)
+   	      FAILED to converge  
+
+	+ A_4: train_size * qi + qi_train + qtt_in_train + weight + (1|animal_id)
+	  FAILED to converge
+	  
+	+ A_5: train_size * weight + qi_train + qtt_in_train + qi + (1|animal_id)
+	  AIC: -4058
+	  
+	  + A_18: train_size * weight * qi + qtt_in_train + qi_train + (1|animal_id)
+	    FAILED to converge
+	  
+	+ A_6: train_size + qi_train * qtt_in_train + qi + weight + (1|animal_id)
+	  AIC: -4066.6
+	  
+	  + A_19: train_size + qi_train * qtt_in_train * qi + weight + (1|animal_id)
+	    FAILED to converge
+	    
+	  + A_20: train_size + qi_train * qtt_in_train * weight + qi +(1|animal_id)
+	    FAILED to converge
+	  
+	+ A_7: train_size + qi_train * qi + qtt_in_train + weight + (1|animal_id)
+	  AIC: -4066.5
+	  
+	  + A_21: train_size + qi_train * qi * weight + qtt_in_train + (1|animal_id)
+	    FAILED to converge
+	  
+	+ A_8: train_size + qi_train * weight + qtt_in_train + qi + (1|animal_id)
+	  AIC: -4061.3
+	  
+	+ A_9: train_size + qi_train + qtt_in_train * qi + weight + (1|animal_id)
+	  AIC: -4060.7
+	  
+	+ A_10: train_size + qi_train + qtt_in_train * weight + qi + (1|animal_id)
+	  AIC: -4057.3
+	  
+	+ A_11: train_size + qi_train + qtt_in_train + weight * qi + (1|animal_id)
+	  AIC: -4056.9
