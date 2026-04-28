@@ -17,8 +17,8 @@ This notebook contains the `python` scripts for measuring the Laplacian-based Qu
 
 ### 2_glmm_effects_on_qi
 
-This notebook contains the `R` scripts for measuring investigate the effects in QI.
+This notebook contains the `R` scripts for investigating the factors that influence QI.
 
 ### 3_glmm_effects_on_erel_and_pvi_effect
 
-This notebook contains the `R` scripts for measuring investigate the effects in Relative Error and Prediction Variability.
+This notebook contains the `R` scripts for investigate the factors that influence relative error and prediction variability.
